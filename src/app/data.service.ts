@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import {PlaceLocation} from './logic/PlaceLocation';
+import {Coffee} from './logic/Coffee';
 
 @Injectable()
 export class DataService {

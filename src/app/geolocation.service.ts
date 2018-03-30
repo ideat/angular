@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import {PlaceLocation} from './logic/PlaceLocation';
 
 
 @Injectable()
@@ -18,7 +19,7 @@ export class GeolocationService {
 
   }
 
-  getMapLink(location: PlaceLocation){
+  getMapLink(location: PlaceLocation) {
     let query = '';
     if (location.latitude) {
       query = location.latitude + ',' + location.longitude;
